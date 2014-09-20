@@ -85,7 +85,7 @@
         scene.add(coords);
 
         // cubes
-        for (var i = 0; i < 20; i ++) {
+        // for (var i = 0; i < 20; i ++) {
           var geometry = new THREE.CubeGeometry(Math.random()*60, Math.random()*60, Math.random()*60);
           var object = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial({color: 0xefefef}));
           object.position.x = Math.random()* 300 - 150;
@@ -120,7 +120,7 @@
           scene.add(object);
           objects.push(object);
           objectsControls.push(objectControls);
-        };
+        // };
 
         // light
         light = new THREE.PointLight(0xefefef);
